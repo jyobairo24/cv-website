@@ -23,7 +23,7 @@ export function renderCurriculum() {
 };
 
 
-  root.innerHTML = \`
+  root.innerHTML = `
     <div class="container">
       <div class="header">
         <img src="\${data.photo || 'https://via.placeholder.com/120'}" class="profile-pic" alt="Foto de perfil" />
