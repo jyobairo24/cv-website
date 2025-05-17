@@ -1,13 +1,27 @@
 export function renderCurriculum() {
   const root = document.getElementById('root');
-  const data = JSON.parse(localStorage.getItem('cvData')) || {
-    fullName: 'Tu Nombre',
-    email: 'correo@ejemplo.com',
-    career: 'Nombre de tu carrera',
-    photo: '',
-    experience: [],
-    pdf: ''
-  };
+ const data = JSON.parse(localStorage.getItem('cvData')) || {
+  fullName: 'Raúl Aguirre Mendoza',
+  email: 'raul@example.com',
+  career: 'Ingeniero en Sistemas Computacionales',
+  photo: 'https://via.placeholder.com/120',
+  experience: [
+    {
+      jobTitle: 'Soporte Técnico',
+      company: 'SIGA Tecnologías',
+      description: 'Instalación de equipos y soporte técnico.',
+      period: '2018 - 2020'
+    },
+    {
+      jobTitle: 'Desarrollador Web',
+      company: 'Zapaterías Moderna',
+      description: 'Creación de sistema web para control de inventarios.',
+      period: '2021 - 2022'
+    }
+  ],
+  pdf: ''
+};
+
 
   root.innerHTML = \`
     <div class="container">
