@@ -25,7 +25,7 @@ export function renderCurriculum() {
   root.innerHTML = `
     <div class="container">
       <div class="header">
-        <img src="${data.photo || 'https://via.placeholder.com/120'}" class="profile-pic" alt="Foto de perfil" />
+        <img src="${data.photo}" class="profile-pic" alt="Foto de perfil" />
         <div>
           <h1>${data.fullName}</h1>
           <h3>${data.career}</h3>
