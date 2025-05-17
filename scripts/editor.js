@@ -2,7 +2,7 @@ export function setupEditor() {
   const root = document.createElement('div');
   root.id = 'editor-panel';
   root.style.display = 'none';
-  root.innerHTML = \`
+  root.innerHTML = `
     <div class="container">
       <h2>Panel de Edición (contraseña: admin123)</h2>
       <input id="password" type="password" placeholder="Contraseña" />
@@ -16,7 +16,7 @@ export function setupEditor() {
         <button id="saveBtn">Guardar</button>
       </div>
     </div>
-  \`;
+  `;
   document.body.appendChild(root);
 
   document.getElementById('password').addEventListener('input', (e) => {
